@@ -9,14 +9,10 @@ var n = 5;
 for (var i = 1; i <= n; i++) {
   rows = "";
   for (var j = 1; j <= i; j++) {
-    if (j == 1 || j == i) {
+    if (j == 1 || j == i || i == n) {
       rows += "*";
     } else {
-      if (i == n) {
-        rows += "*";
-      } else {
-        rows += " ";
-      }
+      rows += " ";
     }
   }
   console.log(rows);
