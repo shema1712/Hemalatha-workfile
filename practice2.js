@@ -1,13 +1,13 @@
-var n = 10;
+// Generating a random integer from 1 to 10
+const random = Math.floor(Math.random() * 10) + 1;
 
-for (var i = 2; i <= n; i++) {
-  var isPrime = true;
-  for (var j = 2; j < i; j++) {
-    if (i % j == 0) {
-      isPrime = false;
-    }
-  }
-  if (isPrime) {
-    console.log(i);
-  }
+// Take input from the user
+let number = 6;
+
+// Take the input until the guess is correct
+while (number == random) {
+  number = 4;
 }
+
+// The loop will exit only if the guess is correct.
+console.log("You guessed the correct number.");
